@@ -3,3 +3,13 @@ app.py
 
 # query scratchpad
 temp_queries.sql
+
+# file with secrets
+config.py
+
+# jupyter notebooks for prototyping
+*.ipynb
+
+# working directories
+__pycache__/
+.ipynb_checkpoints/
