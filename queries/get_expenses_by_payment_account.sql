@@ -1,6 +1,7 @@
 SELECT t.guid AS txn_guid,
        t.post_date,
        t.description,
+       s.account_guid AS expense_account_guid,
        a_s.account_type AS expense_type,
        s.guid AS expense_split_guid,
        a_s.name AS expense_category,
