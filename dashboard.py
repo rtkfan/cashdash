@@ -21,8 +21,8 @@ def get_data(path):
 splits = get_data('./queries/get_expenses_by_payment_account.sql')
 accounts = get_data('./queries/get_account_full_paths.sql')
 
-earliest_tx = datetime.datetime.strptime(min(splits["post_date"]),'%Y-%m-%d %H:%M:%S').date()
-latest_tx = datetime.datetime.strptime(max(splits["post_date"]),'%Y-%m-%d %H:%M:%S').date()
+earliest_tx = datetime.datetime.strptime(min(splits["post_date"]),'%Y-%m-%d').date()
+latest_tx = datetime.datetime.strptime(max(splits["post_date"]),'%Y-%m-%d').date()
 
 app = dash.Dash(__name__)
 

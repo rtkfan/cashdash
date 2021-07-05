@@ -1,5 +1,5 @@
 SELECT t.guid AS txn_guid,
-       t.post_date,
+       DATE(t.post_date,'start of day') AS post_date,
        t.description,
        s.account_guid AS expense_account_guid,
        a_s.account_type AS expense_type,
